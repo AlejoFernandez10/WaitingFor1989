@@ -134,7 +134,17 @@ body{
     margin-top:19rem;
     margin-bottom: 60px;
     font-family: 'Montserrat', sans-serif;
-    color: #fff; 
+    color: #fff;
+
+    animation: saltarH1 1s 1;    
+    transform: translateY(0);
+    transition: 2s; 
+}
+
+@keyframes saltarH1{
+    from{
+        transform: translateY(-400px);
+    }
 }
 
 /* NAV-INDEX */
@@ -145,11 +155,23 @@ body{
 }
 
 .nav-bars-menu{display: none;}
+
 .nav-container-index{
     display: flex;
     justify-content: center;
     margin-bottom: 250px;
+
+    animation: saltar 1s 1;    
+    transform: translateX(0);
+    transition: 2s; 
 }
+
+@keyframes saltar{
+    from{
+        transform: translateX(-500px);
+    }
+}
+
 
 .nav__list-index{
     display: flex;
@@ -173,7 +195,9 @@ body{
     text-decoration: none;
     color: #000;
     margin-right: 40px;
-    font-size: 22px;}
+    font-size: 22px;
+
+}
 
 .carrito-index a:hover, .iniciar-sesion-index a:hover{
     color: #fff;
