@@ -8,6 +8,8 @@
     box-sizing: border-box;
 }
 
+html{scroll-behavior: smooth;}
+
 body{
     min-height: 100vh;
     background: url(../imagenes/Productos/products-background.png) no-repeat center center fixed;
@@ -381,13 +383,15 @@ body{
 .carrito__producto-agregado{
     height: 12em;
     width: 100%;
-    background-color: #ddd;
+    background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3));
     margin-top: 30px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.carrito__producto-agregado:last-child{margin-bottom: 100px;}
 
 div .carrito__producto-agregado-imagen{
     height: 12em;
@@ -669,7 +673,6 @@ div .carrito__producto-agregado-imagen{
 @media screen and (max-width:700px){
     .carrito__producto-agregado{
         font-size: 13px;
-        padding: 10px;
     }
     .carrito__producto-agregado{
         display: flex;
