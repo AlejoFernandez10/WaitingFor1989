@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
     <!-- ESTILOS CSS -->
     <link rel="stylesheet" href="../estilos/estilos.css">
 
@@ -35,15 +41,26 @@
     </header>
 
     <main class="contacto-main-container">
-        <h2>Contacto</h2>
-        <form action="" class="contacto-form">
 
-            <input type="text" placeholder="Escriba su nombre completo">
-            <input type="email" name="" id="" placeholder="Ingrese su correo electronico">
-            <textarea name="" id="" cols="30" rows="5" placeholder="Deje su mensaje"></textarea>
-            <button> Enviar mensaje</button>
-            <button> Limpiar contenido</button>
-        </form>
+        <div class="contacto-form-container">
+            <h2>Contacto</h2>
+            <form action="" class="contacto-form">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Ingrese su nombre</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="nombre apellido">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Ingrese su correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@example.com">
+                  </div>                
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Deje su comentario</label>
+                    <textarea class="form-control text-area" id="exampleFormControlTextarea1" cols="50" rows="5"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-outline-primary">Enviar mensaje</button>
+
+            </form>
+        </div>
 
         <section class="donde-encontrarnos">
             <a href="#">Donde encontrarnos</a>

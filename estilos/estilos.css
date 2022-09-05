@@ -218,12 +218,13 @@ body{
 
 .carousel{
     height: 36em;
-    width: 1300px; 
+    width: 1300px;
 }
 
 .carousel-inner{
     height: 100%;
     width: 100%;
+ 
 }
 
 .carousel-item{height: 100%;width: 100%;}
@@ -336,13 +337,30 @@ body{
     justify-content: center;
     align-items: center;
 }
-.contacto-main-container h2{font-size: 35px;margin-top: 80px;margin-bottom: 40px;}
+.contacto-main-container h2{font-size: 45px;margin-top: 40px;margin-bottom: 40px;}
+
+.contacto-form-container{
+    margin-top: 50px;
+
+    background:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 50%;
+    border-radius: 7px;
+    border: 1px solid #000;
+}
+
+
+
+.form-label{margin-top: 15px;}
 
 .contacto-form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 65%;
 }
 .contacto-form input{
     height: 2.5em;
@@ -350,6 +368,10 @@ body{
     margin: 5px;
     border: 2px solid #000;
 }
+
+.mb-3 textarea{width: 95%;margin: auto;}
+
+.btn-outline-primary{margin: 15px;margin-bottom: 30px; }
 
 .donde-encontrarnos{
     display: flex;
@@ -646,6 +668,12 @@ div .carrito__producto-agregado-imagen{
 
     }
 }
+
+/* CONTACTO */
+
+
+
+
 
 
 /* CARRITO */
