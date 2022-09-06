@@ -38,7 +38,7 @@ body{
 }
 .nav-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 1200px;
     font-size: 15px;
@@ -337,7 +337,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.contacto-main-container h2{font-size: 45px;margin-top: 40px;margin-bottom: 40px;}
+.contacto-main-container h2{font-size: 45px;margin-top: 40px;color: #000;}
 
 .contacto-form-container{
     margin-top: 50px;
@@ -350,12 +350,14 @@ body{
     text-align: center;
     max-width: 50%;
     border-radius: 7px;
-    border: 1px solid #000;
+    border: 1px solid #0d6efd;
 }
 
-
+.mb-3{width: 100%;display: flex;flex-direction: column;align-items: center;}
+.mb-3 .form-control{width: 85%;}
 
 .form-label{margin-top: 15px;}
+
 
 .contacto-form{
     display: flex;
@@ -671,7 +673,13 @@ div .carrito__producto-agregado-imagen{
 
 /* CONTACTO */
 
+@media screen and (max-width:500px){
+    .contacto-main-container h2{font-size: 35px;}
 
+    .mb-3 .form-control{height: 2em;font-size: 14px;}
+    .mb-3 .form-label{font-size: 14px;}
+    .mb-3 .text-area{height: 10em;}
+}
 
 
 
