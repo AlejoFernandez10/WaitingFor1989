@@ -220,14 +220,13 @@ body{
 }
 
 .carousel{
-    height: 30em;
-    width: 1300px;
+    height: 28em;
+    width: 1200px;
 }
 
 .carousel-inner{
     height: 100%;
-    width: 100%;
- 
+    width: 100%; 
 }
 
 .carousel-item{height: 100%;width: 100%;}
@@ -467,11 +466,7 @@ div .carrito__producto-agregado-imagen{
 
 /*  ------------     MOBILE  ------------ */
 
-/* NAV MOBILE */
 
-@media screen and (max-width:360px) {.container-fluid .navbar-brand{font-size: 14px;}
-    
-}
 
 /* INDEX */
 
@@ -576,6 +571,7 @@ div .carrito__producto-agregado-imagen{
 
     .carousel{
         height: 25em;
+
     }
 
     .productos-item{
@@ -679,6 +675,11 @@ div .carrito__producto-agregado-imagen{
     }
 }
 
+@media screen and (max-width:360px){
+
+    .container-fluid .navbar-brand{font-size: 14px;
+    }
+}
 /* CONTACTO */
 
 @media screen and (max-width:650px){
