@@ -28,20 +28,59 @@
 
         <nav class="nav-container">
             <div class="logo">Waiting for 1989(Logo)</div>
-            <div class="nav-bars-menu"><img src="../imagenes/menu-bars.png" alt=""></div>
             <ul class="nav__list">
                 <li class="nav__list-item"> <a href="../index.html">Inicio</a> </li>
                 <li class="nav__list-item"> <a href="productos.html">Productos</a> </li>
                 <li class="nav__list-item"> <a href="contacto.html">Contacto</a> </li>             
             </ul>
-
+            
             <!-- Este div es para facilitar el uso de flex -->
             <div class="nav__right-section">
                 <div class="carrito"><a href="carrito.html"><img src="../imagenes/shopping-cart.png" alt="Carrito" class="carrito-image"></a></div>
                 <div class="iniciar-sesion"> <a href="iniciar-sesion.html"><img src="../imagenes/log-in.png" alt="Log in"></a></div>
             </div>
+        </nav>     
+
+            <!-- NAV RESPONSIVE -->
             
-        </nav>        
+            <nav class="navbar navbar-dark fixed-top ">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html">Waiting for 1989(Logo)</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Waiting for 1989</h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="./carrito.html"><img src="../imagenes/shopping-cart.png" alt=""></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="./iniciar-sesion.html"><img src="../imagenes/log-in.png" alt=""></a>
+                        </li>
+        
+                      </ul>
+                      <!-- <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                      </form> -->
+                    </div>
+                  </div>
+                </div>
+              </nav>       
     </header>
 
     <main class="productos-main-container">
