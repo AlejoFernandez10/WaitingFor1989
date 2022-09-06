@@ -467,6 +467,11 @@ div .carrito__producto-agregado-imagen{
 
 /*  ------------     MOBILE  ------------ */
 
+/* NAV MOBILE */
+
+@media screen and (max-width:360px) {.container-fluid .navbar-brand{font-size: 14px;}
+    
+}
 
 /* INDEX */
 
@@ -611,21 +616,28 @@ div .carrito__producto-agregado-imagen{
 }
 
 @media screen and (max-width:650px){
+    .header{position: fixed;}
     .header .navbar{
-        display: inline-block;
+        display: block;
         margin-top: 10px;
         margin-right:25px ;
     }
-    .navbar-brand{font-size: 17px;margin-left: 15px;margin-top: 5px;}
+    .navbar-brand{font-size: 17px;margin-left: 15px;margin-top: 5px;margin-right: 0;}
 
     .logo{display: none;}
     .nav__list{display: none;}
     .nav__right-section{display: none;}
 
-    .nav-bars-menu{display: inline-block;}
-    .nav-bars-menu img{
-        height: 35px;
-        color: #fff;
+
+    .photo-slider{margin-top: 85px;}
+
+    .aside-h3{font-size: 30px;}
+    .aside-options{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
     .productos-item-grid{
         display: grid;
@@ -640,6 +652,11 @@ div .carrito__producto-agregado-imagen{
         width: 200px;
     }
 
+    .productos-center-alignment{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .eleccion-tipo-de-producto{
         font-size: 15px;
         margin-right: 25px;
@@ -653,30 +670,7 @@ div .carrito__producto-agregado-imagen{
     }
 }
 
-@media screen and (max-width:650px){
 
-    .aside-h3{font-size: 30px;}
-    .aside-options{
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .productos-item{
-        height: 340px;
-        width: 230px;
-        font-size: 13px;
-    }
-    .productos-item img{
-        width: 230px;
-    }
-    .productos-center-alignment{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
 
 @media screen and (max-width:480px){
     .productos-item-grid{
@@ -686,6 +680,10 @@ div .carrito__producto-agregado-imagen{
 }
 
 /* CONTACTO */
+
+@media screen and (max-width:650px){
+    .contacto-form-container{margin-top:100px ;}
+}
 
 @media screen and (max-width:500px){
     .contacto-main-container h2{font-size: 35px;}
