@@ -218,7 +218,7 @@ body{
     display: flex;
     justify-content: center;
 
-    animation: animacion-slider 1.5s 1;
+    animation: animacion-slider 3s 1;
 }
 
 @keyframes animacion-slider{

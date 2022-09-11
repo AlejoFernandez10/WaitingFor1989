@@ -1,0 +1,36 @@
+/* FOOTER GENERAL */
+.footer-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    color:#ddd ;
+    background-color: #000;
+    margin-top: auto;
+
+    .links-condiciones{display: flex;justify-content: flex-end;align-items: center;}
+
+
+    .footer__contacto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .footer__seguinos{
+        max-width: 150px;
+
+        .footer__seguinos-title{
+            margin-top:20px ;
+        }
+    }
+
+    .footer__span-suelto{text-align: center;}
+    .footer__span-suelto3{text-align: left;}
+}
+
+.footer-container span a{
+    color: #ddd;
+    padding: 3px;
+}
+

@@ -1,0 +1,90 @@
+
+/* ----- INDEX/INICIO SECTION ----- */
+.index-body{
+    min-height: 100vh;
+    width: 100%;
+    background:linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.4)),
+    url(../imagenes/index-background.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column ;
+    
+    /* NAV-INDEX */
+    
+    .header-index{
+        display: flex;
+        flex-direction: column;
+
+        .header__titulo-principal h1{
+            text-align: center;
+            font-size: 120px;
+            margin-top:19rem;
+            margin-bottom: 60px;
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+        
+            animation: saltarH1 1s 1;    
+            transform: translateY(0);
+            transition: 2s; 
+        }
+        
+        @keyframes saltarH1{
+            from{
+                transform: translateY(-400px);
+            }
+        }
+
+        .nav-container-index{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 250px;
+        
+            animation: saltar 1s 1;    
+            transform: translateX(0);
+            transition: 2s;
+
+            .nav__list-index{
+                display: flex;
+                list-style: none;
+
+                .nav__list-item-index a{
+                    text-decoration: none;
+                    color: #000;
+                    margin-right: 40px;
+                    font-size: 22px;
+                }
+                .nav__list-item-index a:hover{
+                    color: #fff;
+                    transition: .7s;
+                }
+                
+            }     
+        }
+        @keyframes saltar{
+            from{
+                transform: translateX(-500px);
+            }
+        }        
+
+        .carrito-index a, .iniciar-sesion-index a{
+            text-decoration: none;
+            color: #000;
+            margin-right: 40px;
+            font-size: 22px;
+        
+        }
+        
+        .carrito-index a:hover, .iniciar-sesion-index a:hover{
+            color: #fff;
+            transition: .7s;}
+    }
+    }
+    
+    
+    
+    
+    
+    
+
+
+
