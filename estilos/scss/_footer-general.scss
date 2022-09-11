@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     color:#ddd ;
-    background-color: #000;
+    background-color: $colorPrincipal;
     margin-top: auto;
 
     .links-condiciones{display: flex;justify-content: flex-end;align-items: center;}

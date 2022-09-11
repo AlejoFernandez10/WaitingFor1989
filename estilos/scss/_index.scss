@@ -51,12 +51,12 @@
 
                     a{
                         text-decoration: none;
-                        color: #000;
+                        color: $colorPrincipal;
                         margin-right: 40px;
                         font-size: 22px;
 
                         &:hover{
-                            color: #fff;
+                            color: $colorSecundario;
                             transition: .7s;
                         }
                     }
@@ -75,12 +75,12 @@
 
             a{
                 text-decoration: none;
-                color: #000;
+                color: $colorPrincipal;
                 margin-right: 40px;
                 font-size: 22px;
 
                 &:hover{
-                    color: #fff;
+                    color: $colorSecundario;
             transition: .7s
                 }
             }

@@ -7,7 +7,7 @@
     align-items: center;
     height: 5em;
     width: 100%;
-    background-color: #000;
+    background-color: $colorPrincipal;
     z-index: 50;
     margin-bottom: 20px;
 
@@ -19,7 +19,7 @@
         font-size: 15px;
 
         .logo{
-            color: #fff;
+            color: $colorSecundario;
             margin-left: 20px;
             margin-right: 0;
         }
@@ -32,14 +32,14 @@
 
                 a{
                     text-decoration: none;
-                    color: #fff;
+                    color: $colorSecundario;
                     margin-right: 20px;
                     font-size: 19px;
                     position: relative;
                     top: 8px;
 
                     &:hover{
-                        color: #fff;
+                        color: $colorSecundario;
                     }
                 }
             }
@@ -55,7 +55,7 @@
 
                 a{
                     text-decoration: underline;
-                    color: #fff;
+                    color: $colorSecundario;
                     font-size: 20px;
                     margin-right: 10px;
                 }
@@ -64,7 +64,7 @@
             .carrito-image{
                 align-self: center;
                 margin-right: 20px;
-                color: #fff;    
+                color: $colorSecundario;    
             }
         }
     }
