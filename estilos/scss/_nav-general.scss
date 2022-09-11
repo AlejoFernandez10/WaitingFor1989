@@ -28,16 +28,21 @@
             display: flex;
             list-style: none;
 
-            .nav__list-item a{
-                text-decoration: none;
-                color: #fff;
-                margin-right: 20px;
-                font-size: 19px;
-                position: relative;
-                top: 8px;
-            }
+            .nav__list-item{
 
-            .nav__list-item a:hover{color: #fff;}
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    margin-right: 20px;
+                    font-size: 19px;
+                    position: relative;
+                    top: 8px;
+
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }
 
         }
 
@@ -46,11 +51,14 @@
             align-items: center;
             justify-content: center;
 
-            .iniciar-sesion a{
-                text-decoration: underline;
-                color: #fff;
-                font-size: 20px;
-                margin-right: 10px;
+            .iniciar-sesion {
+
+                a{
+                    text-decoration: underline;
+                    color: #fff;
+                    font-size: 20px;
+                    margin-right: 10px;
+                }
             }
             
             .carrito-image{
