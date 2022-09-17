@@ -350,6 +350,69 @@
 }
 
 
+/* INICIAR SESION */
+
+@media screen and (max-width:900px){
+    .iniciar-sesion-main-container{
+        .iniciar-sesion-center-div{
+
+            .iniciar-sesion-form-container{
+                .iniciar-sesion-form{
+    
+                    padding-left: 0;
+                    padding-right: 0;
+                    .mb-3{
+                        .form-control{
+                            width: 80%;
+                        }
+                    }
+                }
+    
+            }
+        }        
+    }
+}
+
+@media screen and (max-width:650px){
+    .iniciar-sesion-main-container{
+        .iniciar-sesion-center-div{
+
+            .iniciar-sesion-form-container{
+                .iniciar-sesion-form{
+                    h2{
+                        font-size: 25px;
+                    }
+                }
+    
+            }
+        }        
+    }
+}
+
+@media screen and (max-width:650px){
+    .iniciar-sesion-main-container{
+        .iniciar-sesion-center-div{
+            flex-direction: column-reverse;
+
+            .iniciar-sesion-image{
+                width: 90%;
+            }
+
+            .iniciar-sesion-form-container{
+                width: 90%;
+
+                .iniciar-sesion-form{
+                    h2{font-size: 30px;}
+
+                    .mb-3{
+                        .form-control{width: 70%;}
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 
 /* CONTACTO */

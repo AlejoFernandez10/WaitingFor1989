@@ -773,6 +773,38 @@ html .header, html .productos-main-container, html .footer-container {
     grid-template-columns: 1fr;
   }
 }
+/* INICIAR SESION */
+@media screen and (max-width: 900px) {
+  .iniciar-sesion-main-container .iniciar-sesion-center-div .iniciar-sesion-form-container .iniciar-sesion-form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .iniciar-sesion-main-container .iniciar-sesion-center-div .iniciar-sesion-form-container .iniciar-sesion-form .mb-3 .form-control {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .iniciar-sesion-main-container .iniciar-sesion-center-div .iniciar-sesion-form-container .iniciar-sesion-form h2 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .iniciar-sesion-main-container .iniciar-sesion-center-div {
+    flex-direction: column-reverse;
+  }
+  .iniciar-sesion-main-container .iniciar-sesion-center-div .iniciar-sesion-image {
+    width: 90%;
+  }
+  .iniciar-sesion-main-container .iniciar-sesion-center-div .iniciar-sesion-form-container {
+    width: 90%;
+  }
+  .iniciar-sesion-main-container .iniciar-sesion-center-div .iniciar-sesion-form-container .iniciar-sesion-form h2 {
+    font-size: 30px;
+  }
+  .iniciar-sesion-main-container .iniciar-sesion-center-div .iniciar-sesion-form-container .iniciar-sesion-form .mb-3 .form-control {
+    width: 70%;
+  }
+}
 /* CONTACTO */
 @media screen and (max-width: 650px) {
   .contacto-main-container .contacto-form-container {
