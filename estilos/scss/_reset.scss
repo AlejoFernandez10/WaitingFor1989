@@ -5,4 +5,17 @@
     box-sizing: border-box;
 }
 
-html{scroll-behavior: smooth;}
+html{
+    scroll-behavior: smooth;
+    body{
+        min-height: 100vh;
+        background: url(../imagenes/Productos/products-background.png) no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        flex-direction: column ;
+    }
+    
+    .header, .productos-main-container, .footer-container{width: 100%;}
+
+}
+

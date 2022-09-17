@@ -1,0 +1,96 @@
+
+.iniciar-sesion-main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .iniciar-sesion-center-div{
+        width: 1200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+
+        .iniciar-sesion-image{
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+    
+            img{
+                width: 100%;
+                height: 40em;
+                border-radius: 10px;
+
+                animation: aparicionImg 2s 1;
+            @keyframes aparicionImg{
+                from{
+                    transform: translateX(-1000px);
+                }
+            }
+            }
+        }
+    
+        .iniciar-sesion-form-container{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+            width: 50%;
+            margin-bottom: 100px;
+        
+            animation: aparicion 2s 1;
+            @keyframes aparicion{
+                from{
+                    transform: translateX(1000px);
+                }
+            }
+            .iniciar-sesion-form{
+                height: 40em;
+                width: 90%;
+                border: 1px solid #000;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-right: 70px;
+                padding-left: 70px;
+                margin-top: 70px;
+                margin-left: 15px;
+                position: relative;
+                top: 15px;
+    
+    
+        
+        
+                h2{font-size: 40px;margin-bottom: 30px;}
+        
+                .mb-3{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+        
+                    .iniciar-sesion-label{margin-top: 20px;margin-left: 0;justify-self: flex-start;color: #777;}
+        
+                    .iniciar-sesion-form-input{
+                        height: 2.5em;
+                        width: 100%;
+                        margin: 5px;
+                        border: 2px solid #000;
+        
+                    }      
+        
+                }
+                .iniciar-sesion-contraseña{
+                    .form-text{margin-top: 30px;margin-bottom: 30px;}
+                }
+                .iniciar-sesion-submit{margin-top: 15px;}
+            }
+        
+        }
+    }
+
+
+    
+}

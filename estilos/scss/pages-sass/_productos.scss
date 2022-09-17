@@ -1,0 +1,145 @@
+
+/*------ PRODUCTOS SECTION -------*/
+
+
+.photo-slider{
+    display: flex;
+    justify-content: center;
+
+    animation: animacion-slider 3s 1;
+
+    @keyframes animacion-slider{
+        from{
+            transform: translateX(1000px);
+        }
+    }
+
+    .carousel{
+        height: 28em;
+        width: 1000px;
+
+        .carousel-inner{
+            height: 100%;
+            width: 100%;
+            
+            .carousel-item{
+                height: 100%;
+                width: 100%;
+                
+                .d-block{
+                    height: 100%;
+                    width: 100%;
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+
+
+.productos-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+
+    .productos-center-alignment{
+        display: flex;
+        width: 1200px;
+        justify-content: center;
+
+
+        .eleccion-tipo-de-producto{
+            display: flex;
+            flex-direction: column;
+            margin-right: 50px;
+
+            .aside-h3{
+                text-align: center;
+                margin-top: 15px;
+                margin-bottom: 30px;
+                font-size: 30px;
+            }
+        }
+        
+
+        .productos-item-grid{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            position: relative;
+            gap: 5px;
+            
+            .productos-item{
+                display: flex;
+                flex-direction: column;
+                height: 430px;
+                width: 300px;
+                background-color: #fff;
+                margin-bottom: 30px;
+                border-radius: 5px;
+                box-shadow: 0 1px 5px #000 ;
+                cursor: pointer;
+
+                &:hover{outline: 1px solid #000;}
+
+                img{
+                    height: 300px;
+                    width: 300px;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                }
+
+                span{
+                    padding: 4px;
+                    margin-left: 15px;
+
+                    .precio{text-decoration: underline;}
+                }
+
+                .productos-item__carrito {text-decoration: none;}   
+
+                
+            }
+        }
+
+    }
+}
+
+
+
+
+
+.footer-container-productos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    color:#ddd ;
+    background-color: #000;
+
+    span a{
+        color: #ddd;
+        padding: 3px;
+    }
+}
+
+.links-condiciones-productos{display: flex;justify-content: flex-end;align-items: center;}
+
+.footer__contacto-productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.footer__seguinos-productos{
+    max-width: 150px;
+}
+.footer__seguinos-title{
+    margin-top:60px ;
+}
+
+.productos__span-suelto{text-align: center;}
+.productos__span-suelto3{text-align: left;}

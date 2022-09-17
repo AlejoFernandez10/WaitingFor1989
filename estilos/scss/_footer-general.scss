@@ -2,10 +2,12 @@
 .footer-container{
     width: 100%;
     display: grid;
+    place-items: center;
     grid-template-columns: repeat(3,1fr);
     color:#ddd ;
     background-color: $colorPrincipal;
     margin-top: auto;
+    padding: 20px;
 
     .links-condiciones{display: flex;justify-content: flex-end;align-items: center;}
 
@@ -15,22 +17,28 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 10px;
+        margin-top: 50px;
     }
     .footer__seguinos{
         max-width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         .footer__seguinos-title{
-            margin-top:20px ;
+            margin-top:20px;
         }
     }
 
     .footer__span-suelto{text-align: center;}
-    .footer__span-suelto3{text-align: left;}
+    .footer__span-suelto3{text-align: center;}
+
+    span a{
+        color: #ddd;
+        padding: 3px;
+    }
 }
 
-.footer-container span a{
-    color: #ddd;
-    padding: 3px;
-}
+
 

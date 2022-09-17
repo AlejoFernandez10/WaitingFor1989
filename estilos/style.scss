@@ -1,6 +1,15 @@
 @import "./scss/variables.scss";
 @import "./scss/reset";
-@import "./scss/index";
 @import "./scss/nav-general";
 @import "./scss/footer-general";
+
+/* PAGES */
+
+@import "./scss/pages-sass/index";
+@import "./scss/pages-sass/productos";
+@import "./scss/pages-sass/contacto";
+@import "./scss/pages-sass/carrito";
+@import "./scss/pages-sass/iniciar-sesion";
 @import "./scss/mediaqueries";
+
+
