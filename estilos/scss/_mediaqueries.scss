@@ -16,22 +16,11 @@
                     .nav__list-item-index{
                         a{
                             margin-right: 30px;
-                            font-size: 20px;
+                            font-size: map-get($fontSizes ,navItems)
                         }
                     }
                 }
-                .carrito-index{
-                    a{
-                        margin-right: 30px;
-                        font-size: 20px;
-                    }
-                }
-                .iniciar-sesion-index{
-                    a{
-                        margin-right: 30px;
-                        font-size: 20px;
-                    }
-                }
+
             }
         }        
     }
@@ -41,7 +30,7 @@
     .footer-container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        font-size: 14px;
+        font-size: map-get($fontSizes ,items);
         place-items: center;   
     }       
 }
@@ -64,26 +53,17 @@
                         }
                     }
                 }
-                .carrito-index{
-                    a{
-                        margin-right: 20px;
-                        font-size: 18px;
-                        color: #ddd
-                    }
-                }
-                .iniciar-sesion-index{
-                    a{
-                        margin-right: 20px;
-                        font-size: 18px;
-                        color: #ddd
-                    }
-                }
             }
         }        
     }
+    .footer-container{
+        .links-condiciones{
+            font-size: 13px;
+        }
+    }
 }
 
-@media screen and (max-width:517px){
+@media screen and (max-width:522px){
     .index-body{
         .header-index{
             .header__titulo-principal h1 {
@@ -95,23 +75,9 @@
                     .nav__list-item-index{
                         a{
                             margin-right: 10px;
-                            font-size: 15px;
+                            font-size: map-get($fontSizes , items );
                             color: #ddd;
                         }
-                    }
-                }
-                .carrito-index{
-                    a{
-                        margin-right: 10px;
-                        font-size: 15px;
-                        color: #ddd
-                    }
-                }
-                .iniciar-sesion-index{
-                    a{
-                        margin-right: 10px;
-                        font-size: 15px;
-                        color: #ddd
                     }
                 }
             }
@@ -134,19 +100,8 @@
                 .nav__list-index{
                     .nav__list-item-index{
                         a{
-                            font-size: 14px;
+                            font-size: 13px;
                         }
-                    }
-                }
-                .carrito-index{
-                    a{
-                        font-size: 14px;
-
-                    }
-                }
-                .iniciar-sesion-index{
-                    a{
-                        font-size: 14px;
                     }
                 }
             }
@@ -162,33 +117,34 @@
                 .nav__list-index{
                     .nav__list-item-index{
                         a{
-                            font-size: 11px;
+                            font-size: 12px;
                             margin-right: 5px;
                             position: relative;
                             left: -10px;
                         }
                     }
                 }
-                .carrito-index{
-                    a{
-                        font-size: 11px;
-                        margin-right: 5px;
-                        position: relative;
-                        left: -10px;
+            }
+        }        
+    }
+}
+@media screen and (max-width:313px){
+    .index-body{
+        .header-index{
 
-                    }
-                }
-                .iniciar-sesion-index{
-                    a{
-                        font-size: 11px;
-                        position: relative;
-                        left: -10px;
+            .nav-container-index{
+                .nav__list-index{
+                    .nav__list-item-index{
+                        a{
+                            font-size: 11px;
+                        }
                     }
                 }
             }
         }        
     }
 }
+
 
 
 
@@ -228,7 +184,7 @@
         font-size: 15px;
         margin-right: 35px;
 
-        .aside-h3{font-size: 25px;}
+        .aside-h3{font-size: map-get($fontSizes ,titles)}
     }
         
 
@@ -289,7 +245,7 @@
         .eleccion-tipo-de-producto{
             width: 100%;
             display: flex;
-            font-size: 15px;
+            font-size: map-get($fontSizes ,items);
             margin-right: 25px;
 
             .aside-h3{font-size: 30px;}
@@ -380,7 +336,7 @@
             .iniciar-sesion-form-container{
                 .iniciar-sesion-form{
                     h2{
-                        font-size: 25px;
+                        font-size: map-get($fontSizes ,titlesMobile)
                     }
                 }
     
@@ -402,7 +358,7 @@
                 width: 90%;
 
                 .iniciar-sesion-form{
-                    h2{font-size: 30px;}
+                    h2{font-size: map-get($fontSizes ,titlesMobile);}
 
                     .mb-3{
                         .form-control{width: 70%;}
@@ -419,7 +375,23 @@
 
 @media screen and (max-width:650px){
     .contacto-main-container{
-        .contacto-form-container{margin-top:100px ;}
+        .contacto-center-div{
+            flex-direction: column;
+
+            .contacto-form-container{
+                margin-top:100px ;
+                width: 90%;
+            }
+
+            .contacto-image{
+                width: 90%;
+                margin-top: 0;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        
     } 
 }
 

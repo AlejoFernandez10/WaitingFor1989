@@ -1,3 +1,4 @@
+
 /* FOOTER GENERAL */
 .footer-container{
     width: 100%;
@@ -9,25 +10,28 @@
     margin-top: auto;
     padding: 20px;
 
-    .links-condiciones{display: flex;justify-content: flex-end;align-items: center;}
+    font-size: map-get($fontSizes, footerItems);
+
+    .links-condiciones{@include flex(row, flex-end, center);}
 
 
     .footer__contacto{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @include flex(column, center, center);
         margin-top: 50px;
+        font-size: map-get($fontSizes, footerItems);
+        
+        h4{
+            font-size: map-get($fontSizes, footerTitles);
+        }
     }
     .footer__seguinos{
         max-width: 150px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column, center, center);
 
         .footer__seguinos-title{
             margin-top:20px;
+            font-size: map-get($fontSizes, footerTitles);
         }
     }
 
@@ -39,6 +43,7 @@
         padding: 3px;
     }
 }
+
 
 
 

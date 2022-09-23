@@ -1,22 +1,19 @@
 /* NAV GENERAL */
+
+
 .header .navbar{display: none;}
 
 .header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5.5em;
+    @include flex(row, center ,center);
+    height: 5.8em;
     width: 100%;
     background-color: $colorPrincipal;
     z-index: 50;
     margin-bottom: 20px;
 
     .nav-container{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include flex(row, space-around ,center);
         width: 1200px;
-        font-size: 15px;
 
         .logo{
             
@@ -36,7 +33,7 @@
                     text-decoration: none;
                     color: $colorSecundario;
                     margin-right: 20px;
-                    font-size: 19px;
+                    font-size: map-get($fontSizes, navItems);
                     position: relative;
                     top: 12px;
 
@@ -50,16 +47,14 @@
         }
 
         .nav__right-section{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex(row, center ,center);
 
             .iniciar-sesion {
 
                 a{
                     text-decoration: underline;
                     color: $colorSecundario;
-                    font-size: 20px;
+                    font-size: map-get($fontSizes, navItems);
                     margin-right: 50px;
                 }
             }
@@ -73,4 +68,6 @@
     }
 
 }
+
+
 

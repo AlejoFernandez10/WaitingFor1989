@@ -1,0 +1,95 @@
+
+
+/* ------- CONTACTO SECTION ------ */
+
+.contacto-main-container{
+    width: 100%;
+    @include flex(column, center, center);
+
+    .contacto-center-div{
+        max-width: 1200px;
+        @include flex(row, center, center);
+        padding: 5px;
+
+        .contacto-image{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+    
+            img{
+                width: 100%;
+                height: 40em;
+                border-radius: 10px;
+                margin-top: 45px;
+                margin-left: 10px;
+
+                animation: aparicionImgContacto 2s 1;
+            }
+            @keyframes aparicionImgContacto{
+                from{
+                    transform: translateY(1000px);
+                }
+            }
+        }
+
+
+        .contacto-form-container{
+            margin-top: 50px;
+
+            height: 40em;
+        
+            @include flex(column, center, center);
+            text-align: center;
+            width: 50%;
+            border-radius: 7px;
+            border: 1px solid #000;
+        
+            animation: aparicionContactoForm 2s 1;
+    
+            @keyframes aparicionContactoForm{
+                from{
+                    transform: translateY(-800px);
+                }
+            }
+            h2{
+                font-size: map-get($fontSizes ,titles);
+                margin-top: 50px;
+                color: #000;
+            }
+    
+            .contacto-form{
+                @include flex(column, center, center);
+    
+                input{
+                    height: 2.5em;
+                    width: 20em;
+                    margin: 5px;
+                    border: 2px solid #000;
+                }
+    
+                .mb-3{
+                    width: 100%;
+                    @include flex(column, center ,center);
+    
+                    .form-control{width: 70%;}
+    
+                    .form-label{margin-top: 15px;color: #777;align-self: flex-start;margin-left: 15%;}
+    
+                    textarea{width: 95%;margin: auto;}
+                }
+    
+                .contacto-submit{margin: 15px;margin-bottom: 30px; }
+            }
+    
+            
+            .donde-encontrarnos{
+                @include flex(column, center, center);
+            }
+        }
+
+    }
+    
+    
+    
+}
+ 
