@@ -31,8 +31,9 @@
             @include flex(column, flex-start ,center);
             text-align: center;
             width: 50%;
+            margin: 5px;
             margin-bottom: 100px;
-        
+            
             animation: aparicion 2s 1;
             @keyframes aparicion{
                 from{
@@ -45,10 +46,10 @@
                 border: 1px solid #000;
                 border-radius: 10px;
                 @include flex(column, center, center);
-                padding-right: 70px;
-                padding-left: 70px;
+                padding-right: 50px;
+                padding-left: 50px;
                 margin-top: 70px;
-                margin-left: 30px;
+                margin-left: 3%;
                 position: relative;
                 top: 15px;
     
@@ -61,7 +62,7 @@
                         width: 100%;
                         @include flex(column, center, center);
         
-                    .iniciar-sesion-label{margin-top: 20px;margin-left: 0;justify-self: flex-start;color: #777;}
+                    .iniciar-sesion-label{margin-top: 20px;margin-left: 0;align-self: flex-start;color: #777;}
         
                     .iniciar-sesion-form-input{
                         height: 2.5em;
