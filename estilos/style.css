@@ -212,6 +212,10 @@ html .header, html .productos-main-container, html .footer-container {
 }
 
 /*------ PRODUCTOS SECTION -------*/
+.products-body {
+  background: url(/imagenes/Productos/products-background.png);
+}
+
 .photo-slider {
   display: flex;
   justify-content: center;
