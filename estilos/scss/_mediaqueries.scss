@@ -184,8 +184,9 @@
         height: 380px;
         width: 250px;
 
-        img{
-            width: 250px;
+        img{height: 250px;}
+        .gorra-frente{
+            height: 250px;
         }
     }
      
@@ -213,8 +214,9 @@
         height: 360px;
         width: 220px;
 
-        img{
-            width: 220px;
+        img{height: 220px;}
+        .gorra-frente{
+            height: 220px;
         }
     }
 }
@@ -242,6 +244,11 @@
         }  
     }
 
+    .productos-main-container{
+        .photo-slider{
+            margin-top: 120px;
+        }
+    }
 
   .productos-container{
     
@@ -276,9 +283,6 @@
                 width: 220px;
                 font-size: 13px;
 
-                img{
-                    width: 220px;
-                }
             }
             
         }
@@ -522,6 +526,17 @@
     
     .carrito-main-container .carrito-section  .carrito__producto-agregado .carrito__cantidad-y-precio-container .carrito__producto-cantidad{
         margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:650px){
+    .carrito-main-container{
+        .carrito-section{
+            .carrito-section__title{
+                margin-top: 60px;
+                text-align: center;
+            }
+        }
     }
 }
 
