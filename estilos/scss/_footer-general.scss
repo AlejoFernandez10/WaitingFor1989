@@ -12,7 +12,7 @@
 
     font-size: map-get($fontSizes, footerItems);
 
-    .links-condiciones{@include flex(row, flex-end, center);}
+    .links-condiciones{@include flex(column, center, center);margin-top: 20px}
 
 
     .footer__contacto{
@@ -30,7 +30,7 @@
         @include flex(column, center, center);
 
         .footer__seguinos-title{
-            margin-top:20px;
+            margin-top:5px;
             font-size: map-get($fontSizes, footerTitles);
         }
     }

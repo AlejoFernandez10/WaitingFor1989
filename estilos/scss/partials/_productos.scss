@@ -20,7 +20,7 @@
     
     .carousel {
         height: 28em;
-        width: 1000px;
+        width: 920px;
 
         .carousel-inner {
             height: 100%;
@@ -115,28 +115,43 @@
 .footer-container-productos{
     width: 100%;
     display: grid;
+    place-items: center;
     grid-template-columns: repeat(3,1fr);
     color:#ddd ;
-    background-color: #000;
+    background-color: $colorPrincipal;
+    margin-top: auto;
+    padding: 20px;
 
+    font-size: map-get($fontSizes, footerItems);
     span a{
         color: #ddd;
         padding: 3px;
     }
 }
 
-.links-condiciones-productos{@include flex(row, flex-end, center);}
+.links-condiciones-productos{@include flex(column, center, center);margin-top: 20px}
 
 .footer__contacto-productos{
-    @include flex(column, center ,center);
-    margin-top: 10px;
+    @include flex(column, center, center);
+        margin-top: 50px;
+        font-size: map-get($fontSizes, footerItems);
+        
+        h4{
+            font-size: map-get($fontSizes, footerTitles);
+        }
 }
 .footer__seguinos-productos{
-    max-width: 150px;
+        max-width: 150px;
+        display: flex;
+        @include flex(column, center, center);
+
+        h4{
+            font-size: map-get($fontSizes, footerTitles);
+        }
 }
 .footer__seguinos-title{
     margin-top:60px ;
 }
 
 .productos__span-suelto{text-align: center;}
-.productos__span-suelto3{text-align: left;}
+.productos__span-suelto3{text-align: center;}

@@ -40,7 +40,11 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         font-size: map-get($fontSizes ,items);
-        place-items: center;   
+        place-items: center;
+        
+        .footer__contacto{
+            margin-bottom: 15px;
+        }
     }       
 }
 
@@ -97,7 +101,12 @@
         display: grid;
         grid-template-columns: 1fr;
         font-size: 14px;
-        place-items: center;            
+        place-items: center;
+        
+        .footer__seguinos{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
     }       
 }
 
@@ -298,6 +307,11 @@
         place-items: center;
         font-size: 13px;
         text-align: center;
+
+        .footer__seguinos-productos{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
     }
 }
 

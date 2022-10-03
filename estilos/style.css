@@ -97,9 +97,10 @@ html .header, html .productos-main-container, html .footer-container {
 }
 .footer-container .links-condiciones {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 .footer-container .footer__contacto {
   display: flex;
@@ -120,7 +121,7 @@ html .header, html .productos-main-container, html .footer-container {
   align-items: center;
 }
 .footer-container .footer__seguinos .footer__seguinos-title {
-  margin-top: 20px;
+  margin-top: 5px;
   font-size: 27px;
 }
 .footer-container .footer__span-suelto {
@@ -232,7 +233,7 @@ html .header, html .productos-main-container, html .footer-container {
 }
 .photo-slider .carousel {
   height: 28em;
-  width: 1000px;
+  width: 920px;
 }
 .photo-slider .carousel .carousel-inner {
   height: 100%;
@@ -305,9 +306,12 @@ html .header, html .productos-main-container, html .footer-container {
 .footer-container-productos {
   width: 100%;
   display: grid;
+  place-items: center;
   grid-template-columns: repeat(3, 1fr);
   color: #ddd;
   background-color: #000;
+  margin-top: auto;
+  padding: 20px;
 }
 .footer-container-productos span a {
   color: #ddd;
@@ -316,9 +320,10 @@ html .header, html .productos-main-container, html .footer-container {
 
 .links-condiciones-productos {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 
 .footer__contacto-productos {
@@ -326,11 +331,22 @@ html .header, html .productos-main-container, html .footer-container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 50px;
+}
+.footer__contacto-productos h4 {
+  font-size: 27px;
 }
 
 .footer__seguinos-productos {
   max-width: 150px;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__seguinos-productos h4 {
+  font-size: 27px;
 }
 
 .footer__seguinos-title {
@@ -342,7 +358,7 @@ html .header, html .productos-main-container, html .footer-container {
 }
 
 .productos__span-suelto3 {
-  text-align: left;
+  text-align: center;
 }
 
 /* ------- CONTACTO SECTION ------ */
@@ -352,6 +368,26 @@ html .header, html .productos-main-container, html .footer-container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.contacto-main-container .donde-encontrarnos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contacto-main-container .donde-encontrarnos h3 {
+  font-size: 27px;
+  text-decoration: underline;
+}
+.contacto-main-container .donde-encontrarnos p {
+  text-align: center;
+}
+.contacto-main-container .donde-encontrarnos iframe {
+  height: 400px;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
 }
 .contacto-main-container .contacto-center-div {
   max-width: 1200px;
@@ -634,6 +670,9 @@ html .header, html .productos-main-container, html .footer-container {
     font-size: 15px;
     place-items: center;
   }
+  .footer-container .footer__contacto {
+    margin-bottom: 15px;
+  }
 }
 @media screen and (max-width: 610px) {
   .index-body .header-index .header__titulo-principal h1 {
@@ -662,6 +701,10 @@ html .header, html .productos-main-container, html .footer-container {
     grid-template-columns: 1fr;
     font-size: 14px;
     place-items: center;
+  }
+  .footer-container .footer__seguinos {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -791,6 +834,10 @@ html .header, html .productos-main-container, html .footer-container {
     place-items: center;
     font-size: 13px;
     text-align: center;
+  }
+  .footer-container-productos .footer__seguinos-productos {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 480px) {
