@@ -42,7 +42,7 @@
                 margin-top: 50px;
                 margin-left: 10px;
 
-                animation: aparicionImgContacto 2s 1;
+                animation: aparicionImgContacto 1.5s 1;
             }
             @keyframes aparicionImgContacto{
                 from{
@@ -63,7 +63,7 @@
             border-radius: 7px;
             border: 1px solid #000;
         
-            animation: aparicionContactoForm 2s 1;
+            animation: aparicionContactoForm 1.5s 1;
     
             @keyframes aparicionContactoForm{
                 from{

@@ -218,8 +218,8 @@ html .header, html .productos-main-container, html .footer-container {
   justify-content: center;
 }
 .photo-slider .slider-products {
-  -webkit-animation: animacion-slider 2.5s 1;
-          animation: animacion-slider 2.5s 1;
+  -webkit-animation: animacion-slider 1.5s 1;
+          animation: animacion-slider 1.5s 1;
 }
 @-webkit-keyframes animacion-slider {
   from {
@@ -246,6 +246,8 @@ html .header, html .productos-main-container, html .footer-container {
 .photo-slider .carousel .carousel-inner .carousel-item .d-block {
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .productos-container {
@@ -408,8 +410,8 @@ html .header, html .productos-main-container, html .footer-container {
   border-radius: 10px;
   margin-top: 50px;
   margin-left: 10px;
-  -webkit-animation: aparicionImgContacto 2s 1;
-          animation: aparicionImgContacto 2s 1;
+  -webkit-animation: aparicionImgContacto 1.5s 1;
+          animation: aparicionImgContacto 1.5s 1;
 }
 @-webkit-keyframes aparicionImgContacto {
   from {
@@ -432,8 +434,8 @@ html .header, html .productos-main-container, html .footer-container {
   width: 50%;
   border-radius: 7px;
   border: 1px solid #000;
-  -webkit-animation: aparicionContactoForm 2s 1;
-          animation: aparicionContactoForm 2s 1;
+  -webkit-animation: aparicionContactoForm 1.5s 1;
+          animation: aparicionContactoForm 1.5s 1;
 }
 @-webkit-keyframes aparicionContactoForm {
   from {
@@ -797,7 +799,7 @@ html .header, html .productos-main-container, html .footer-container {
     height: 3.1em;
   }
   .productos-main-container .photo-slider {
-    margin-top: 120px;
+    margin-top: 92px;
   }
   .productos-container .productos-center-alignment {
     display: flex;
@@ -814,7 +816,10 @@ html .header, html .productos-main-container, html .footer-container {
   }
   .productos-container .productos-center-alignment .eleccion-tipo-de-producto .aside-options {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
